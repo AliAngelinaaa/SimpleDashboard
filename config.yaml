@@ -1,0 +1,36 @@
+# Server Configuration
+server:
+  port: 8050
+  host: '0.0.0.0'
+  debug: false
+
+# Chart Default Settings
+charts:
+  default_type: 'line'
+  color_scheme: 'plotly'
+  height: 600
+  width: 800
+  
+# Data Settings
+data:
+  upload_directory: 'uploads/'
+  allowed_extensions:
+    - '.csv'
+    - '.xlsx'
+    - '.xls'
+  max_file_size_mb: 10
+
+# Theme Settings
+theme:
+  primary_color: '#2c3e50'
+  secondary_color: '#3498db'
+  font_family: 'Arial, sans-serif'
+  dark_mode: false
+
+# Export Settings
+export:
+  default_format: 'png'
+  available_formats:
+    - 'png'
+    - 'pdf'
+  output_directory: 'exports/' 
